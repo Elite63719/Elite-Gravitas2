@@ -943,17 +943,9 @@
 			dependencies: ["429A660FABB36C9F"]
 			id: "78ABF3C50265136D"
 			rewards: [{
-				id: "106F0B9AAAF4B0ED"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 0L
-							traits: [ ]
-						}
-					}
-					id: "tfc:food/red_apple"
-				}
+				count: 4
+				id: "23A923116301382D"
+				item: "tfc:wood/log/oak"
 				type: "item"
 			}]
 			subtitle: "{gravitas.quest.stage1.subt.crafting}"

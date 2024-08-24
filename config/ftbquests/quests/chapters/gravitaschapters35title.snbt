@@ -1,0 +1,196 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gravitaschapters35title"
+	group: "3CB58C688DD23BD2"
+	icon: {
+		Count: 1
+		id: "sfm:disk"
+		tag: { }
+	}
+	id: "1B866E8014D212BC"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{gravitas.quest.sfm.desc.hi}"]
+			icon: "createdeco:decal_right"
+			id: "39078145DD3263BB"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "{gravitas.quest.sfm.subt.hi}"
+			tasks: [{
+				id: "432E8860335907CE"
+				title: "{gravitas.quest.sfm.hi}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39078145DD3263BB"]
+			description: ["{gravitas.quest.sfm.desc.manager}"]
+			id: "4E116F04BD4A6371"
+			subtitle: "{gravitas.quest.sfm.subt.manager}"
+			tasks: [{
+				id: "7CDF2E9FF85DEEDA"
+				item: "sfm:manager"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4E116F04BD4A6371"]
+			description: ["{gravitas.quest.sfm.desc.invcab}"]
+			id: "3734425ED38127F4"
+			subtitle: "{gravitas.quest.sfm.subt.invcab}"
+			tasks: [{
+				id: "6DA9EE9D4B5E07B9"
+				item: "sfm:cable"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F4B8D0E8BCCDDCA"]
+			description: ["{gravitas.quest.sfm.desc.label}"]
+			id: "47BA654148767ECF"
+			min_width: 10
+			subtitle: "{gravitas.quest.sfm.subt.label}"
+			tasks: [{
+				id: "095B7CF05B5297DA"
+				item: {
+					Count: 1
+					id: "sfm:labelgun"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["39078145DD3263BB"]
+			description: ["{gravitas.quest.sfm.desc.disk}"]
+			id: "473997165247E161"
+			subtitle: "{gravitas.quest.sfm.subt.disk}"
+			tasks: [{
+				id: "7FDF39B4BCF60391"
+				item: {
+					Count: 1
+					id: "sfm:disk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4E116F04BD4A6371"
+				"473997165247E161"
+			]
+			description: ["{gravitas.quest.sfm.desc.example}"]
+			id: "0F4B8D0E8BCCDDCA"
+			shape: "rsquare"
+			subtitle: "{gravitas.quest.sfm.subt.example}"
+			tasks: [{
+				id: "36F567A112D6CA55"
+				title: "{gravitas.quest.sfm.example}"
+				type: "checkmark"
+			}]
+			title: "{gravitas.quest.sfm.example}"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0F4B8D0E8BCCDDCA"
+				"47BA654148767ECF"
+			]
+			description: [
+				"{gravitas.quest.sfm.desc.ex2}"
+				""
+				"{image:gravitas:textures/quests/sfmex1.png width:160 height:100 align:center}"
+			]
+			id: "35A0F049AC6868FE"
+			min_width: 325
+			shape: "rsquare"
+			tasks: [{
+				id: "6DC8CE449CF47084"
+				title: "{gravitas.quest.sfm.ex2}"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["106951D5EF47026E"]
+			description: ["{gravitas.quest.sfm.desc.io}"]
+			id: "749BCC32431639AC"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "34E40CB94A1EE5E3"
+				title: "{gravitas.quest.sfm.io}"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"47BA654148767ECF"
+				"35A0F049AC6868FE"
+			]
+			description: ["{gravitas.quest.sfm.desc.triggers}"]
+			id: "106951D5EF47026E"
+			shape: "hexagon"
+			tasks: [{
+				id: "7743F563E5CD412C"
+				title: "{gravitas.quest.sfm.triggers}"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["106951D5EF47026E"]
+			description: [
+				"{gravitas.quest.sfm.desc.triggert}"
+				"{image:gravitas:textures/quests/sfmtrigt.png width:230 height:100 align:center}"
+			]
+			id: "73D193509042512F"
+			min_width: 275
+			tasks: [{
+				id: "11660A23772F15C9"
+				title: "gravitas.quest.sfm.triggert"
+				type: "checkmark"
+			}]
+			title: "{gravitas.quest.sfm.triggert}"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["106951D5EF47026E"]
+			description: [
+				"{gravitas.quest.sfm.desc.triggerr}"
+				"{image:gravitas:textures/quests/sfmtrigr.png width:230 height:100 align:center}"
+			]
+			id: "6027DCEEACE9029B"
+			min_width: 275
+			tasks: [{
+				id: "6223C702991640DE"
+				title: "gravitas.quest.sfm.triggerr"
+				type: "checkmark"
+			}]
+			title: "{gravitas.quest.sfm.triggerr}"
+			x: 7.0d
+			y: 1.0d
+		}
+	]
+	title: "{gravitas.chapters.35.title}"
+}
