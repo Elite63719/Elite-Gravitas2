@@ -138,7 +138,7 @@
 				title: "{gravitas.quest.sfm.io}"
 				type: "checkmark"
 			}]
-			x: 9.5d
+			x: 8.25d
 			y: 0.0d
 		}
 		{
@@ -147,6 +147,7 @@
 				"35A0F049AC6868FE"
 			]
 			description: ["{gravitas.quest.sfm.desc.triggers}"]
+			icon: "createdeco:decal_electrical"
 			id: "106951D5EF47026E"
 			shape: "hexagon"
 			tasks: [{
@@ -161,8 +162,9 @@
 			dependencies: ["106951D5EF47026E"]
 			description: [
 				"{gravitas.quest.sfm.desc.triggert}"
-				"{image:gravitas:textures/quests/sfmtrigt.png width:230 height:100 align:center}"
+				"{image:gravitas:textures/quests/sfmtrigt.png width:200 height:100 align:center}"
 			]
+			icon: "minecraft:clock"
 			id: "73D193509042512F"
 			min_width: 275
 			tasks: [{
@@ -178,8 +180,9 @@
 			dependencies: ["106951D5EF47026E"]
 			description: [
 				"{gravitas.quest.sfm.desc.triggerr}"
-				"{image:gravitas:textures/quests/sfmtrigr.png width:230 height:100 align:center}"
+				"{image:gravitas:textures/quests/sfmtrigr.png width:270 height:100 align:center}"
 			]
+			icon: "minecraft:redstone"
 			id: "6027DCEEACE9029B"
 			min_width: 275
 			tasks: [{
@@ -190,6 +193,150 @@
 			title: "{gravitas.quest.sfm.triggerr}"
 			x: 7.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["749BCC32431639AC"]
+			description: ["{gravitas.quest.sfm.desc.input}"]
+			id: "536888A76BB25FDF"
+			tasks: [{
+				id: "5FDA549E26300716"
+				title: "{gravitas.quest.sfm.input}"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["749BCC32431639AC"]
+			description: ["{gravitas.quest.sfm.desc.output}"]
+			id: "6E85541D560D80A8"
+			tasks: [{
+				id: "19D99F7F3B78F6CE"
+				title: "{gravitas.quest.sfm.output}"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"6E85541D560D80A8"
+				"536888A76BB25FDF"
+			]
+			description: ["{gravitas.quest.sfm.desc.lv2}"]
+			id: "1B62115763AEE905"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "67F2869299B5C2CA"
+				title: "{gravitas.quest.sfm.lv2gravitas.quest.sfm.lv2}"
+				type: "checkmark"
+			}]
+			title: "{gravitas.quest.sfm.lv2}"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B62115763AEE905"]
+			description: [
+				"{gravitas.quest.sfm.desc.retain}"
+				""
+				"{image:gravitas:textures/quests/sfmretain.png width:273 height:100 align:center}"
+			]
+			id: "5432FC9D4CD65F3D"
+			min_width: 300
+			tasks: [{
+				id: "5C2025FD41221ACA"
+				title: "{gravitas.quest.sfm.retain}"
+				type: "checkmark"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B62115763AEE905"]
+			description: [
+				"{gravitas.quest.sfm.desc.each}"
+				""
+				"{image:gravitas:textures/quests/sfmeach.png width:250 height:125 align:center}"
+			]
+			id: "137A8F09CA34E8A4"
+			min_width: 275
+			tasks: [{
+				id: "664FC21038DAE485"
+				title: "{gravitas.quest.sfm.each}"
+				type: "checkmark"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B62115763AEE905"]
+			description: [
+				"{gravitas.quest.sfm.desc.forget}"
+				""
+				"{image:gravitas:textures/quests/sfmforget.png width:280 height:65 align:center}"
+			]
+			id: "72387A034001861D"
+			min_width: 300
+			tasks: [{
+				id: "7C894468A652A89D"
+				title: "{gravitas.quest.sfm.forget}"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B62115763AEE905"]
+			description: ["{gravitas.quest.sfm.desc.trans}"]
+			id: "264CB468CE942434"
+			min_width: 275
+			tasks: [{
+				id: "50DCEEC7FD086243"
+				title: "{gravitas.quest.sfm.trans}"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5432FC9D4CD65F3D"
+				"137A8F09CA34E8A4"
+			]
+			description: [
+				"{gravitas.quest.sfm.desc.reteach}"
+				""
+				"{image:gravitas:textures/quests/sfmretaineach.png width:250 height:50 align:center}"
+			]
+			id: "19DCEAF1C75290DE"
+			min_width: 275
+			tasks: [{
+				id: "1D5BDFB2A64C1DAA"
+				title: "{gravitas.quest.sfm.reteach}"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"264CB468CE942434"
+				"72387A034001861D"
+				"19DCEAF1C75290DE"
+			]
+			description: ["{gravitas.quest.sfm.desc.lv3}"]
+			id: "45858C20A67A0796"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "48613B3775586ED4"
+				title: "{gravitas.quest.sfm.lv3}"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 0.0d
 		}
 	]
 	title: "{gravitas.chapters.35.title}"
